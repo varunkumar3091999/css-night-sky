@@ -37,13 +37,9 @@ const appendStars = () => {
 
     const starElement = document.createElement("div");
     starElement.classList.add("star-forth-layer", "star-1");
-    starElement.style.cssText = `position:absolute;top:${topPosition}%;left:${leftPosition}%`;
+    starElement.style.cssText = `position:absolute;top:${topPosition}%;left:${leftPosition}%;`;
     sky.appendChild(starElement);
   }
-};
-
-const appendShootingStars = () => {
-  const shootingStarElement = document.createElement("div");
 };
 
 window.addEventListener("load", appendStars);
